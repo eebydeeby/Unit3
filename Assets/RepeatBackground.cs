@@ -1,3 +1,4 @@
+// Script for scrolling background to the left
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,7 +15,7 @@ public class RepeatBackground : MonoBehaviour
 		repeatWidth = GetComponent<BoxCollider>().size.x / 2;
     }
 
-    // Update is called once per frame
+	// Moves background left and then repeats after a certain point
     void Update()
     {
         if (transform.position.x < startPos.x - repeatWidth)
